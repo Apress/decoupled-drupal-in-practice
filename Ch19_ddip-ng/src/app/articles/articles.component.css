@@ -1,0 +1,5 @@
+/* src/app/articles.component.css */
+.selected {
+  font-weight: bold;
+  color: green;
+}

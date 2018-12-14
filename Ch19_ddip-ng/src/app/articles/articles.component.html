@@ -1,0 +1,17 @@
+<!-- src/app/articles.component.html -->
+<h2>List of articles</h2>
+<ul class="articles">
+  <li *ngFor="let article of articles"
+      [class.selected]="article === selectedArticle"
+      (click)="onSelect(article)">
+    Article {{article.attributes.uuid}}: {{article.attributes.title}}
+  </li>
+</ul>
+
+<div *ngIf="selectedArticle">
+  <h2>{{selectedArticle.attributes.title}} details ({{selectedArticle.attributes.uuid}})</h2>
+  <div>
+    <label>Title: </label>
+    <input [(ngModel)]="selectedArticle.attributes.title" placeholder="Title">
+  </div>
+</div>
