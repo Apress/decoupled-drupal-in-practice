@@ -1,0 +1,9 @@
+name: Extended REST
+description: 'Adds custom resources to the Drupal core REST API.'
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+  - drupal:rest
