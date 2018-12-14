@@ -1,0 +1,13 @@
+{{! app/templates/components/entity-list.hbs }}
+<h2>{{title}}</h2>
+<ul>
+  {{#each entities as |entity|}}
+    <li>
+      {{entity.title}}
+      <ul>
+        <li>{{entity.created}}</li>
+        <li>{{entity.body.value}}</li>
+      </ul>
+    </li>
+  {{/each}}
+</ul>
